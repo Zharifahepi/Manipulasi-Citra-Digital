@@ -27,8 +27,17 @@ Eksperimen ini bergantung pada beberapa pustaka (*libraries*) Python berikut:
 ├── images/img1.jpg                             
 ├── images/img2.webp                             
 ├── notebook/manipulasi_citra.ipynb                
-├── Laporan_Praktikum_Manipulasi_Citra.docx 
+├── report/Laporan_Tugas_Manipulasi_Citra.pdf
 ├── requirements.txt                       
-└── README.md                              
+└── README.md
+
+## Ringkasan 
+**BGR vs RGB:** Citra default OpenCV (BGR) yang dibuka langsusng via matplotlib menghasilkan visualisasi distorsi warna kebiruan. Konversi eksplisit via `cv.cvtColor` berhasil memulihkan akurasi warna objek asli
+**Resize & Interpolation:** sebelum dilakukan operasi aritmatika, dimensi `images/img2.webp` diselaraskan secara presisi dengan `images/img1.jpg` memanfaatkan interpolasi bilinear untuk hasil transisi tepi yang halus
+**Image Blending:** penggabungan linear terkontrol berhasil dilakukan menggunakan fungsi `cv.addWeighted` dengan variasi bobot linear
+**Image Negative:** Inversi nilai intensitas piksel ($255 - r$) menghasilkan visual komplementer dan membalik distribusi frekuensi histogram secara horizontal di titik tengah $128$
+**Transformasi Non-Linear:** Transformasi Logaritmik: Mencerahkan area gelap secara agresif namun membuat area terang menjadi washed-out (putih datar). Transformasi Gamma: Koreksi pencahayaan adaptif terbaik diperoleh pada rentang $\gamma < 1$ (misal $\gamma = 0.5$) untuk kasus underexposure tanpa merusak detail warna asli. Sebaliknya, $\gamma > 1$ ($\gamma = 2.0$ dan $2.5$) secara progresif menekan nilai piksel rendah hingga menciptakan efek siluet/shadow yang pekat
+
+
 
 
