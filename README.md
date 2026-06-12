@@ -21,5 +21,14 @@ Eksperimen ini bergantung pada beberapa pustaka (*libraries*) Python berikut:
 
 ## Cara Menjalankan Notebook
 **Persiapan Folder:** Pastikan semua file tugas (`.ipynb`, file gambar, dan `requirements.txt`) berada dalam satu folder yang sama.
-**Eksekusi Kode:** Buka file 
+**Eksekusi Kode:** Buka file `notebook/manipulasi_citra.ipynb` melalui browser, lalu jalankan setiap sel secara berurutan dari atas ke bawah
+
+## Struktur Folder
+├── images/img1.jpg                             
+├── images/img2.webp                             
+├── notebook/manipulasi_citra.ipynb                
+├── Laporan_Praktikum_Manipulasi_Citra.docx 
+├── requirements.txt                       
+└── README.md                              
+
 
