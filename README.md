@@ -10,8 +10,8 @@ Project ini merupakan implementasi prapemrosesan dan manipulasi piksel dasar pad
 
 ## Citra yang Digunakan
 Project ini menggunakan dua buah citra bertipe data `uint8` berformat `.jpg` sebagai input utama:
-1. **`citra1.jpg`**: Citra utama berukuran $(490 \times 735 \times 3)$ piksel yang digunakan sebagai objek dasar visualisasi dan transformasi non-linear.
-2. **`citra2.jpg`**: Citra kedua yang digunakan sebagai pasangan dalam eksperimen penggabungan gambar (*image blending*).
+1. **`images/img1.jpg`**: Citra utama berukuran $(490 \times 735 \times 3)$ piksel yang digunakan sebagai objek dasar visualisasi dan transformasi non-linear.
+2. **``**: Citra kedua yang digunakan sebagai pasangan dalam eksperimen penggabungan gambar (*image blending*).
 
 ## 🛠️ Library yang Digunakan
 Eksperimen ini bergantung pada beberapa pustaka (*libraries*) Python berikut:
